@@ -2,6 +2,8 @@ name: Python Execution Workflow
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 10 * * 5'
 
 jobs:
   run-python:
